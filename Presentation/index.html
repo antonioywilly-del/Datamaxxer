@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>DataMaxxer - Presentación de Proyecto</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Portada -->
+            <section data-background-transition="zoom">
+                <div class="cyber-card">
+                    <h1 class="glitch-title" data-text="DATAMAXXER">DATAMAXXER</h1>
+                    <p class="font-mono highlight-magenta"
+                        style="letter-spacing: 4px; font-size: 0.9em; margin-top: 10px;">
+                        BOMBA STUDIOS // INFRASTRUCTURE LINK V1.0
+                    </p>
+
+                    <div
+                        style="margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; font-size: 0.8em; text-align: left; border-top: 1px solid rgba(0, 240, 255, 0.2); padding-top: 20px;">
+                        <div>
+                            <span class="badge">Programación y HUD</span>
+                            <p style="margin: 5px 0 0 0; font-weight: bold;">Antonio</p>
+                            <p style="margin: 2px 0 0 0; opacity: 0.6; font-size: 0.85em;">Desarrollo técnico, HUD
+                                dinámico, Persistencia</p>
+                        </div>
+                        <div>
+                            <span class="badge badge-magenta">Diseño y Niveles</span>
+                            <p style="margin: 5px 0 0 0; font-weight: bold;">Abdullah</p>
+                            <p style="margin: 2px 0 0 0; opacity: 0.6; font-size: 0.85em;">Diseño de Juego, Mecánicas,
+                                Narrativa</p>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 30px; font-size: 0.6em; opacity: 0.5;" class="font-mono">
+                        Universidad de Málaga // Programación de Videojuegos // 22/06/2026
+                    </p>
+                </div>
+            </section>
+
+            <!-- Idea y Narrativa -->
+            <section>
+                <div class="slide-grid-2">
+                    <div>
+                        <h2>Idea & Narrativa</h2>
+                        <h3 style="margin-top: 15px; font-size: 1.1em;">El Núcleo del Cable de Fibra</h3>
+                        <ul>
+                            <li><span class="highlight-cyan">Paquete de datos:</span> Control de un paquete de alta
+                                prioridad en tránsito.</li>
+                            <li><span class="highlight-cyan">Entorno:</span> Viaje por el interior de un cable de fibra
+                                óptica de sílice.</li>
+                            <li><span class="highlight-magenta">Degradación:</span> Red masiva con fallos físicos y de
+                                transmisión.</li>
+                            <li><span class="highlight-magenta">Obstáculos:</span> Ruido electromagnético, impurezas y
+                                firewalls.</li>
+                            <li><span class="highlight-green">Objetivo:</span> Evitar la fragmentación y maximizar la
+                                distancia.</li>
+                        </ul>
+                    </div>
+                    <div class="cyber-card"
+                        style="padding: 10px !important; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <img class="screenshot" src="img/Screenshot From 2026-06-21 14-40-53.png"
+                            alt="Gameplay DataMaxxer">
+                        <div style="font-size: 0.65em; opacity: 0.7; margin-top: 8px; text-align: center; width: 100%;"
+                            class="font-mono">
+                            Vista 3D cilíndrica desde la perspectiva del paquete
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Mecánicas de Juego -->
+            <section>
+                <h2>Mecánicas y Control</h2>
+                <div class="slide-grid-2" style="margin-top: 15px;">
+                    <div class="cyber-card">
+                        <h3 style="font-size: 1.1em; margin-bottom: 10px;">Movimiento Cilíndrico</h3>
+                        <ul>
+                            <li><span class="highlight-cyan">6 carriles:</span> Rotación circular cíclica continua por
+                                el túnel.</li>
+                            <li><span class="highlight-cyan">Salto Radial:</span> Reducción de la distancia al eje
+                                central.</li>
+                            <li><span class="highlight-magenta">Multiplicador:</span> Esquivas al límite incrementan la
+                                velocidad hasta 4x.</li>
+                            <li><span class="highlight-green">Score en MB:</span> Medido en megabytes transmitidos con
+                                éxito.</li>
+                        </ul>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <div class="cyber-card" style="padding: 10px !important;">
+                            <img class="screenshot" src="img/Screenshot From 2026-06-21 14-40-53.png" alt="Gameplay HUD"
+                                style="max-height: 180px; width: 100%; object-fit: contain;">
+                        </div>
+                        <div class="slide-grid-2" style="gap: 15px;">
+                            <div class="cyber-card" style="padding: 10px !important; text-align: center;">
+                                <span class="font-mono highlight-cyan" style="font-size: 1.4em;">6</span>
+                                <p style="font-size: 0.7em; margin: 5px 0 0 0; text-transform: uppercase;">Carriles
+                                    fijos</p>
+                            </div>
+                            <div class="cyber-card" style="padding: 10px !important; text-align: center;">
+                                <span class="font-mono highlight-magenta" style="font-size: 1.4em;">4.0x</span>
+                                <p style="font-size: 0.7em; margin: 5px 0 0 0; text-transform: uppercase;">Ancho de
+                                    banda max</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Arte y Personalización -->
+            <section>
+                <div class="slide-grid-2">
+                    <div class="cyber-card"
+                        style="padding: 10px !important; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                        <img class="screenshot" src="img/Screenshot From 2026-06-21 14-39-37.png" alt="Skins Selector">
+                        <div style="font-size: 0.65em; opacity: 0.7; margin-top: 8px; text-align: center; width: 100%;"
+                            class="font-mono">
+                            Selector de Skins integrado con modelos emisivos
+                        </div>
+                    </div>
+                    <div>
+                        <h2>Arte & Estilo</h2>
+                        <h3 style="margin-top: 15px; font-size: 1.1em;">Dirección Artística</h3>
+                        <ul>
+                            <li><span class="highlight-cyan">Estilo visual:</span> Oscuro de alto contraste con colores
+                                cian/magenta.</li>
+                            <li><span class="highlight-cyan">Iluminación:</span> Materiales autoluminiscentes y efectos
+                                Bloom.</li>
+                            <li><span class="highlight-magenta">Skins:</span> Personalización cosmética del paquete de
+                                datos.</li>
+                            <li><span class="highlight-green">Optimización:</span> Modelos adaptados para rendimiento
+                                óptimo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interfaz de Usuario y Menús -->
+            <section>
+                <h2>Interfaz y HUD (UX/UI)</h2>
+                <p style="font-size: 0.8em; margin-bottom: 20px; opacity: 0.8;">Diseño limpio y responsivo con estética
+                    terminal de redes.</p>
+                <div class="slide-grid-3">
+                    <div class="cyber-card"
+                        style="padding: 10px !important; display: flex; flex-direction: column; align-items: center;">
+                        <img class="screenshot" src="img/Screenshot From 2026-06-21 14-39-04.png" alt="Menú Principal"
+                            style="max-height: 120px; width: 100%; object-fit: contain;">
+                        <p style="font-size: 0.7em; font-weight: bold; margin-top: 10px;">Menú Principal</p>
+                        <p style="font-size: 0.6em; opacity: 0.6; margin: 2px 0 0 0; text-align: center;">Botones
+                            estilizados con navegación fluida.</p>
+                    </div>
+                    <div class="cyber-card"
+                        style="padding: 10px !important; display: flex; flex-direction: column; align-items: center;">
+                        <img class="screenshot" src="img/Screenshot From 2026-06-21 14-39-09.png" alt="Ajustes"
+                            style="max-height: 120px; width: 100%; object-fit: contain;">
+                        <p style="font-size: 0.7em; font-weight: bold; margin-top: 10px;">Calibrar Protocolo</p>
+                        <p style="font-size: 0.6em; opacity: 0.6; margin: 2px 0 0 0; text-align: center;">Volumen SFX,
+                            música y sensibilidad.</p>
+                    </div>
+                    <div class="cyber-card"
+                        style="padding: 10px !important; display: flex; flex-direction: column; align-items: center;">
+                        <img class="screenshot" src="img/Screenshot From 2026-06-21 14-39-26.png" alt="Créditos"
+                            style="max-height: 120px; width: 100%; object-fit: contain;">
+                        <p style="font-size: 0.7em; font-weight: bold; margin-top: 10px;">Registros de Red</p>
+                        <p style="font-size: 0.6em; opacity: 0.6; margin: 2px 0 0 0; text-align: center;">Créditos
+                            integrados de forma narrativa.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Persistencia y Guardado de Datos -->
+            <section>
+                <h2>Guardado de Datos</h2>
+                <div class="slide-grid-2" style="margin-top: 15px;">
+                    <div>
+                        <h3 style="font-size: 1.1em; margin-bottom: 10px;">Persistencia Técnica</h3>
+                        <ul>
+                            <li><span class="font-mono highlight-cyan">HighScoreManager:</span> Clase del namespace
+                                Gameplay.</li>
+                            <li><span class="font-mono highlight-cyan">PlayerPrefs:</span> Persistencia local inmediata
+                                nativa de Unity.</li>
+                            <li><span class="highlight-magenta">Actualización:</span> Se evalúa al final de cada sesión
+                                de datos.</li>
+                        </ul>
+                    </div>
+                    <div class="cyber-card font-mono"
+                        style="text-align: left; font-size: 0.7em; border-color: var(--magenta);">
+                        <div style="color: var(--magenta); font-weight: bold; margin-bottom: 10px;">// CLAVES GUARDADAS:
+                        </div>
+                        <p style="margin: 5px 0;"><span class="highlight-cyan">DataMaxxer_HighScore_MB</span><br><span
+                                style="opacity: 0.6;">-> Puntuación máxima en MB (int)</span></p>
+                        <p style="margin: 15px 0 5px 0;"><span
+                                class="highlight-cyan">DataMaxxer_HighMultiplier</span><br><span
+                                style="opacity: 0.6;">-> Multiplicador máximo récord (float)</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Diapositiva de Demo -->
+            <section>
+                <div class="cyber-card">
+                    <h2 class="glitch-title" data-text="DEMO & GAMEPLAY">DEMO & GAMEPLAY</h2>
+                    <p class="font-mono highlight-cyan"
+                        style="letter-spacing: 2px; font-size: 1.1em; margin-top: 15px;">
+                        [ TRANSMISIÓN EN TIEMPO REAL ]
+                    </p>
+
+                    <div
+                        style="margin-top: 25px; border: 1px solid var(--magenta); background: rgba(2, 3, 8, 0.9); padding: 25px; border-radius: 6px; box-shadow: 0 0 20px rgba(255, 0, 170, 0.15); text-align: center;">
+                        <p style="font-size: 1.1em; margin-bottom: 15px;">A continuación se presentará una demostración
+                            práctica del juego y el tráiler oficial.</p>
+                        <span class="badge"
+                            style="font-size: 0.9em; padding: 6px 12px; border-color: var(--cyan); color: var(--cyan); background: rgba(0, 240, 255, 0.08);">
+                            > CONECTANDO CON EL VÍDEO DEMOSTRATIVO...
+                        </span>
+                    </div>
+
+                    <p style="margin-top: 25px; font-size: 0.7em; opacity: 0.6;" class="font-mono">
+                        (Video Demo)
+                    </p>
+                </div>
+            </section>
+
+            <!-- Diapositiva de Cierre -->
+            <section>
+                <div class="cyber-card">
+                    <h2 class="glitch-title" data-text="TRANSMISIÓN COMPLETA">TRANSMISIÓN COMPLETA</h2>
+                    <h3 style="margin-top: 15px; font-size: 1.2em;">¡Muchas Gracias por su atención!</h3>
+                    <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">¿Preguntas?</p>
+
+                    <div style="margin-top: 35px; border-top: 1px dashed rgba(0, 240, 255, 0.2); padding-top: 20px; font-size: 0.7em;"
+                        class="font-mono">
+                        <span class="highlight-cyan">DATAMAXXER</span> // Creado por Bomba Studios // Universidad de
+                        Málaga
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="cyber-lightbox" class="cyber-modal">
+        <div class="cyber-modal-content">
+            <button id="cyber-lightbox-close" class="cyber-modal-close" aria-label="Cerrar">&times;</button>
+            <img id="cyber-lightbox-img" class="cyber-modal-img" src="" alt="Captura ampliada">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.js"></script>
+    <script>
+        // Inicializar Reveal.js con una transición futurista y dimensiones explícitas
+        Reveal.initialize({
+            width: 1280,
+            height: 720,
+            margin: 0.08, // Margen ampliado para prevenir recortes en los bordes de la pantalla
+            minScale: 0.2,
+            maxScale: 2.0,
+            hash: true,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide', // none/fade/slide/convex/concave/zoom
+            backgroundTransition: 'fade'
+        });
+
+        // Lógica del Lightbox para las capturas de pantalla/interfaces
+        const screenshots = document.querySelectorAll('.screenshot');
+        const lightbox = document.getElementById('cyber-lightbox');
+        const lightboxImg = document.getElementById('cyber-lightbox-img');
+        const lightboxClose = document.getElementById('cyber-lightbox-close');
+
+        screenshots.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.classList.add('active');
+            });
+        });
+
+        const closeLightbox = () => {
+            lightbox.classList.remove('active');
+        };
+
+        lightboxClose.addEventListener('click', closeLightbox);
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                closeLightbox();
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+    </script>
+</body>
+
+</html>
