@@ -1,0 +1,44 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:Style src="GameplayHUD.uss" />
+
+    <!-- SCORE DISPLAY - Top Right (consolidated: score + best) -->
+    <ui:VisualElement name="score-container" class="hud-panel score-panel">
+        <ui:Label name="score-label" text="0 MB" class="score-text" />
+        <ui:Label name="highscore-label" text="BEST: ---" class="highscore-text" />
+    </ui:VisualElement>
+
+    <!-- BANDWIDTH MULTIPLIER - Top Left -->
+    <ui:VisualElement name="multiplier-container" class="hud-panel multiplier-panel">
+        <ui:Label name="multiplier-label" text="x1.0" class="multiplier-text" />
+        <ui:Label name="multiplier-sublabel" text="BANDWIDTH" class="multiplier-sublabel" />
+    </ui:VisualElement>
+
+    <!-- GAME OVER OVERLAY - starts hidden via inline style -->
+    <ui:VisualElement name="gameover-overlay" class="gameover-overlay" style="display: none;">
+        <ui:VisualElement name="gameover-panel" class="gameover-panel">
+            <ui:Label name="gameover-title" text="PACKET LOSS" class="gameover-title" />
+            <ui:VisualElement class="separator-line" />
+            <ui:VisualElement class="gameover-stats">
+                <ui:VisualElement class="stat-row">
+                    <ui:Label text="DATA TRANSMITTED" class="stat-label" />
+                    <ui:Label name="gameover-score" text="0 MB" class="stat-value" />
+                </ui:VisualElement>
+                <ui:VisualElement class="stat-row">
+                    <ui:Label text="PEAK BANDWIDTH" class="stat-label" />
+                    <ui:Label name="gameover-multiplier" text="x1.0" class="stat-value" />
+                </ui:VisualElement>
+                <ui:VisualElement class="stat-row">
+                    <ui:Label text="PERSONAL BEST" class="stat-label" />
+                    <ui:Label name="gameover-highscore" text="0 MB" class="stat-value stat-highlight" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="new-record-label" text="&gt;&gt; NEW RECORD &lt;&lt;" class="new-record-text" style="display: none;" />
+            <ui:VisualElement class="separator-line" />
+            <!-- ACTION BUTTONS -->
+            <ui:VisualElement class="gameover-buttons">
+                <ui:Button name="retry-button" text="[ RETRANSMIT ]" class="gameover-btn gameover-btn-primary" />
+                <ui:Button name="menu-button" text="[ DISCONNECT ]" class="gameover-btn gameover-btn-secondary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

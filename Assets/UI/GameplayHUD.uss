@@ -1,0 +1,203 @@
+/* ═══════════════════════════════════════════════
+   DATAMAXXER - CYBERPUNK GAMEPLAY HUD
+   ═══════════════════════════════════════════════ */
+
+/* ─── UTILITY CLASSES ─── */
+.hidden {
+    display: none;
+}
+
+/* ─── HUD PANEL BASE ─── */
+.hud-panel {
+    position: absolute;
+    background-color: rgba(0, 5, 15, 0.8);
+    border-width: 1px;
+    border-color: rgba(0, 255, 255, 0.4);
+    border-radius: 2px;
+    padding: 8px 16px;
+}
+
+/* ─── SCORE PANEL (Top Right) ─── */
+.score-panel {
+    top: 16px;
+    right: 16px;
+    border-color: rgba(0, 255, 255, 0.6);
+    border-left-width: 3px;
+    border-left-color: rgb(0, 255, 255);
+    min-width: 150px;
+    align-items: flex-end;
+}
+
+.score-text {
+    font-size: 36px;
+    color: rgb(0, 255, 255);
+    -unity-font-style: bold;
+    -unity-text-align: middle-right;
+    letter-spacing: 2px;
+    margin-bottom: 2px;
+}
+
+.highscore-text {
+    font-size: 11px;
+    color: rgba(0, 255, 255, 0.4);
+    -unity-text-align: middle-right;
+    letter-spacing: 2px;
+    margin-top: 0;
+}
+
+/* ─── MULTIPLIER PANEL (Top Left) ─── */
+.multiplier-panel {
+    top: 16px;
+    left: 16px;
+    border-color: rgba(255, 0, 170, 0.6);
+    border-right-width: 3px;
+    border-right-color: rgb(255, 0, 170);
+    min-width: 90px;
+    align-items: flex-start;
+}
+
+.multiplier-text {
+    font-size: 30px;
+    color: rgb(255, 0, 170);
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    letter-spacing: 1px;
+}
+
+.multiplier-sublabel {
+    font-size: 9px;
+    color: rgba(255, 0, 170, 0.45);
+    -unity-text-align: middle-left;
+    letter-spacing: 4px;
+    margin-top: -4px;
+}
+
+/* ═══════════════════════════════════════════════
+   GAME OVER OVERLAY
+   ═══════════════════════════════════════════════ */
+
+.gameover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.gameover-panel {
+    background-color: rgba(5, 5, 20, 0.95);
+    border-width: 2px;
+    border-color: rgba(255, 0, 100, 0.5);
+    border-radius: 4px;
+    padding: 40px 60px;
+    align-items: center;
+    min-width: 420px;
+}
+
+.gameover-title {
+    font-size: 44px;
+    color: rgb(255, 30, 80);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 6px;
+    margin-bottom: 16px;
+}
+
+.separator-line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(255, 0, 170, 0.25);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ─── Stats Table ─── */
+.gameover-stats {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.stat-row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: rgba(180, 200, 220, 0.6);
+    letter-spacing: 2px;
+    -unity-text-align: middle-left;
+}
+
+.stat-value {
+    font-size: 18px;
+    color: rgb(0, 255, 255);
+    -unity-font-style: bold;
+    letter-spacing: 1px;
+    -unity-text-align: middle-right;
+}
+
+.stat-highlight {
+    color: rgb(255, 220, 0);
+}
+
+/* ─── New Record ─── */
+.new-record-text {
+    font-size: 20px;
+    color: rgb(255, 220, 0);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/* ─── Game Over Buttons ─── */
+.gameover-buttons {
+    width: 100%;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.gameover-btn {
+    width: 260px;
+    height: 42px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+    border-width: 1px;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: bold;
+    font-size: 16px;
+    letter-spacing: 3px;
+    -unity-text-align: middle-center;
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.15s;
+}
+
+.gameover-btn-primary {
+    color: rgb(0, 255, 255);
+    border-color: rgba(0, 255, 255, 0.6);
+}
+
+.gameover-btn-primary:hover {
+    background-color: rgba(0, 255, 255, 0.12);
+    border-color: rgb(0, 255, 255);
+}
+
+.gameover-btn-secondary {
+    color: rgba(180, 200, 220, 0.5);
+    border-color: rgba(180, 200, 220, 0.2);
+}
+
+.gameover-btn-secondary:hover {
+    color: rgba(180, 200, 220, 0.85);
+    background-color: rgba(180, 200, 220, 0.08);
+    border-color: rgba(180, 200, 220, 0.5);
+}

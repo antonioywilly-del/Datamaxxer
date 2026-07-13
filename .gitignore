@@ -1,0 +1,56 @@
+# This .gitignore file template is metatargeted for Unity projects.
+#
+# Covers JetBrains Rider, Visual Studio, Visual Studio Code, and common Unity temporary files.
+
+/[lL]ibrary/
+/[tT]emp/
+/[oO]bj/
+/[bB]uild/
+/[bB]uilds/
+/[lL]ogs/
+/[uU]ser[sS]ettings/
+
+# Memory dumps
+*.dmp
+*.dump
+
+# Crash reports
+CrashReport*
+
+# Builds
+/[bB]uild/
+/[bB]uilds/
+/BETA/
+/DatamaxxerV1/
+
+# Zip files and Unity packages (avoid uploading massive backups to git)
+*.zip
+*.unitypackage
+
+# Scaffolding / IDE files
+.vs/
+.vscode/
+.gradle/
+ExportedObj/
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.targets
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
